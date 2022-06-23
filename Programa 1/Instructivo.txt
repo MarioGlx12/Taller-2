@@ -1,0 +1,91 @@
+                                          Guía para la ejecución del programa 1
+
+
+A continuación encontrará una breve guía sobre cómo ejecutar el código.
+Para la ejecución del código, se deben seguir los siguientes pasos:
+
+
+1. Instalar librerías.
+
+Lo primero que se debe hacer es instalar las librerías que se utilizarán para que el código pueda ejecutarse. 
+Para instalar las librerías, en caso de que sea la primera en vez en que se utilizan, solo se debe ejecutar 
+las líneas de código que digan "install.package". Esto se hace seleccionando dichas líneas y presionando 
+Ctrl+enter ó Ctrl+A, que selecciona todo el código y luego Ctrl+enter para ejecutarlo, de esta manera se 
+instalarán las librerías.
+
+En este caso, las lineas install.package estan comentadas justo antes de llamar a la librebria correspondiente
+por lo que se recomienda borrar el signo numeral "#" y luego ejercutar la linea para instalar las respectivas 
+librerias.
+
+2. Llamar a las librerías.
+  
+En este apartado es oportuno aclarar que en R, se debe llamar la librería, dependiendo de la que se vaya a 
+utilizar, cada vez que esta se use. Para llamar una librería en R, se hace ejecutando las líneas de código que 
+digan "library("****")", seleccionando dichas líneas y presionando Ctrl+enter.
+
+3. Ejecutar código.
+
+Para ejercutar el programa se debe seleccionar todas las lineas de codigo y ejecutarlas, para esto se recomiena
+ubicar el curso en alguna linea de codigo y hacer click como si se fuera a escribir algo, luego presionar las 
+teclas Ctrl + A, de este modo se seleccionan todas las lineas de codigo, luego soltar y presinar la combinación
+de teclas Ctrl + Enter para ejecutar las lineas previamente seleccionadas.
+
+4. Llamar las funciones.
+
+En R, para utilizar una función, se debe llamar a esta en la consola, para inicializar esta y así poder emplearla.
+En este caso la función se llama main y no tiene unos parametro definidos por lo que deberá ser llamada de
+la siguiente forma en la consola:
+
+main()
+
+una vez la función ha sido llamada se presiona la tecla Enter y se desplegará el menú de opciones que contiene la
+función y las cuales seran detalladas a continuación:
+
+-------------------------------------------------Ejecución y descripción del programa 1----------------------------------------
+
+En la primiera parte del programa se llaman las librerias gapminder, ggplot2, dplyr y openxlsx (las cuales son 
+necesarias para la ejecución del codigo). Despues se encuentra una variables gp_mnd la cual almacena los datos de
+gapminder y la cual será utilizada para trabajar los elementos de dicha librería.
+
+Al ejecutar la función main() se desplegara un menu con 5 opciones las cuales son las siguientes:
+
+1. "Guardar gapminder".
+
+En esta opción primeramente se indentifica el 10% de las columnas lifeExp, pop y gdpPercap, luesgo se selecionan 
+aleatoriamente dicho indices a lo largo de cada columna, es decir, que se seleccionaran indiccen al azar
+correspondientes al 10% de capa columa. Una vez se tengan dicho indices se procederá a reemplazarlos por las siglas
+NA (valor no asignado por sus siglas en ingles) y posteriormente exporta los datos de gapminder con el 10% de las 
+columas anteriormente mencionadas con valor no asginado (NA) en un archivo xlsx.
+
+2. "Leer gapminder.xlsx".
+
+Esta opción permite cargar el archivo exportada en la opción anterior alojandolo en una variable llamada GapMinder
+la cual se imprimirá para confirmar que el archivo gapminder.xlsx se ha importado correctamente.
+
+3. "Graficar el diagrama de dispersión lifeExp vs pop".
+
+Esta opción primeramente repite la opción 2 para cargar los datos de gapminder.xslx y con dichos datos 
+grafica el diagrama de dispersión de lifeExp vs pop.
+
+Al ejecutar esta opción es normal que aparezca un mensaje de alerta en la consola pero podemos ignorar dicha advertencia.
+
+4. " Graficar el diagrama de dispersión gdpPercap vs pop".
+
+Esta opción primeramente repite la opción 2 para cargar los datos de gapminder.xslx y con dichos datos 
+grafica el diagrama de dispersión de gdPercap vs pop.
+
+5. "Graficar los diagramas de cajas de la variable gdpPercap discriminados por continentes desde 1990 a 2007".
+
+Esta opción primeramente repite la opción 2 para cargar los datos de gapminder.xslx, posteriormente reemplaza todas las 
+siglas de valor no asignado (NA) que se encuentra en la columna gdpPercap por el valor minimo de dicha columna. Luego,
+selecciona las columnas year, continent y gdpPercap despues se aplica el filtro que permite seleccionar los años desde
+1990 hasta 2007. Finalmente realiza el respectivo diagrama de cajas.
+
+-----------------------------------------------------------------------------------------------------------------------------
+Notas:
+- La función solo ejecuta una opción a la vez, así que una vez haya ejecutado una opción es necesario volver a llamarla
+para volver a ejecutar alguna de sus opciones.
+
+- Es importante asegurarse de tener todas las librerias instaladas todas las librerias previamente mencionadas para el 
+correcto funcionamiento del programa.
+

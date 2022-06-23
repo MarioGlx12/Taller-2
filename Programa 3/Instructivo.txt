@@ -1,0 +1,60 @@
+                                                  Guía para la ejecución del programa 3
+
+
+A continuación encontrará una breve guía sobre cómo ejecutar el código.
+
+Para la ejecución del código, se deben seguir los siguientes pasos:
+
+1. Ejecutar código.
+
+Para ejercutar el programa se debe seleccionar todas las lineas de codigo y ejecutarlas, para esto se recomiena
+ubicar el curso en alguna linea de codigo y hacer click como si se fuera a escribir algo, luego presionar las 
+teclas Ctrl + A, de este modo se seleccionan todas las lineas de codigo, luego soltar y presinar la combinación
+de teclas Ctrl + Enter para ejecutar las lineas previamente seleccionadas.
+
+2. Llamar la función.
+
+En R, para utilizar una función, se debe llamar a esta en la consola, para inicializar esta y así poder emplearla.
+En este caso la función se llama main y no tiene unos parametro definidos por lo que deberá ser llamada de
+la siguiente forma en la consola:
+
+main()
+
+una vez la función ha sido llamada se presiona la tecla Enter y se desplegará el menú de opciones que contiene la
+función y las cuales seran detalladas a continuación:
+
+-------------------------------------------------Generalidades y ejecución del programa 3---------------------------------------------
+
+El programa cuenta únicamente con la función main, al ejecutar dicha función se despliga un menu que presenta las
+siguientes opciones:
+
+1. "Graficar la función de densidad de una distribución uniforme".
+
+Esta opción pedirá que ingrese los limites superior e inferior para posteriormente graficar la función de densidad 
+de una distribución uniforme. Cabe resaltar que esta opción detiene el programa en caso de que detecte que el valor
+ingresado en el limite inferior no sea superior al valor ingresado en el limite superior.
+
+2. "Graficar la función de densidad de una distribución Bernoulli".
+
+Esta función solicitará el limite del eje x para crear el vector correspondiente al eje x con dicho limite, despues
+pedirá que ingrese el número de ensayos y la probabilidad de éxito en cada ensayo. Cabe resaltar que esta opción 
+detiene el programa en caso de que el valor correspondiente al numero de ensayos de major al limite del eje x o en 
+caso de que el valor ingresado en la probailidad de éxito de cada ensayo sea mayor a 1.
+
+3. "Graficar la función de densidad de una distribución Poisson".
+
+Esta función solicitará el limite del eje x para crear el vector correspondiente al eje x con dicho limite, despues 
+pedirá que ingrese la media de eventos que ocurren en el intervalo (lambda). Finalmente, realizará la grafica 
+correspondiente a la función de densidad de una distribución Poisson.
+
+4. "Graficar la función de densidad de una distribución Exponencial"
+
+Esta función solicitará el limite del eje x para crear el vector correspondiente al eje x con dicho limite, despues
+pedirá que ingrese el valor de lambda (Recuerde que el valor de lambda debe ser mayor que 0). Posteriormente, 
+realizará la gráfica correspondiente a la función de densidad de una distribución Exponencial. Cabe resaltar que esta
+opción detendrá el programa si el valor ingresado en lambda no es mayor que 0.
+
+------------------------------------------------------------------------------------------------------------------------------
+Nota:
+- La función solo ejecuta una opción a la vez, así que una vez haya ejecutado una opción es necesario volver a llamarla
+para volver a ejecutar alguna de sus opciones.

@@ -1,0 +1,83 @@
+                                                Guía para la ejecución del programa 2
+
+
+
+A continuación encontrará una breve guía sobre cómo ejecutar el código.
+
+
+
+----------------------------------------------Descripción general del programa 2--------------------------------------------
+
+El programa 2 tiene tres opciones. 
+
+La primera parte genera 2 archivos de datos en csv, que son archivos con un tipo de documento en formato abierto  
+para representar datos en forma de tabla de forma sencilla; en este, las columnas se separan por comas y las filas 
+por saltos de línea. Además, indica si la diferencia en la media de los datos es estadísticamente significativa, 
+es decir, si después de aplicar el test student, donde se tiene la hipótesis de que las medias son iguales, p es 
+mayor o menor que alpha, teniendo alfa un valor de 0.5. 
+
+Si se da la primera opción, donde p > 0.5, la hipótesis no se rechaza, por lo tanto, la diferencia no será 
+estadísticamente significativa, caso contrario si se da la segunda opción.
+
+La segunda parte, muestra la correlación de Pearson y Spearman de dichos datos. 
+La correlación de Pearson indicará si los datos tienen una relación lineal, esto definirá el valor que se obtenga. 
+Para esto, hay que mencionar que existen unos umbrales los cuales son utilizados para interpretar dicha correlación. 
+Estos dicen que:
+
+Entre 0 y 0,10: hay una correlación inexistente
+Entre 0,10 y 0,29: la correlación es débil
+Entre 0,30 y 0,50: la correlación es moderada
+Entre 0,50 y 1,00: la correlación es fuerte
+
+En la correlación de Spearman, es una medida no paramétrica de la correlación de rango, es decir, la dependencia 
+estadística del ranking entre dos variables. Mide la fuerza y la dirección de la asociación entre dos variables 
+clasificadas.
+
+La tercera parte, muestra la gráfica del diagrama de dispersión y la línea recta que aproxime los datos calculada 
+por una regresión lineal por mínimos cuadrados.
+----------------------------------------------------------------------------------------------------------------------------
+
+Para la ejecución del código, se deben seguir los siguientes pasos:
+
+1. Ejecutar código.
+
+Para ejercutar el programa se debe seleccionar todas las lineas de codigo y ejecutarlas, para esto se recomiena
+ubicar el curso en alguna linea de codigo y hacer click como si se fuera a escribir algo, luego presionar las 
+teclas Ctrl + A, de este modo se seleccionan todas las lineas de codigo, luego soltar y presinar la combinación
+de teclas Ctrl + Enter para ejecutar las lineas previamente seleccionadas.
+
+2. Llamar la función.
+
+En R, para utilizar una función, se debe llamar a esta en la consola, para inicializar esta y así poder emplearla.
+En este caso la función se llama main y no tiene unos parametro definidos por lo que deberá ser llamada de
+la siguiente forma en la consola:
+
+main()
+
+una vez la función ha sido llamada se presiona la tecla Enter y se desplegará el menú de opciones que contiene la
+función y las cuales seran detalladas a continuación:
+
+
+Este programa, recoge las tres opciones anteriores en una función llamada “main”, que al momento de ejecutarse 
+despliega un menú con 5 opciones, a las cuales se puede acceder ingresando un número (de 1 a 5)  en el momento que 
+aparezca la frase “Ingresar opción: “.
+
+La opción 1, aplica el test student a los dos experimentos y muestra si la diferencia es o no estadísticamente 
+significativa.
+
+La opción 2, calcula y muestra la correlación de Pearson.
+
+La opción 3, calcula y muestra la correlación de Spearman.
+
+La opción 4, muestra la gráfica del diagrama de dispersión y la línea recta que aproxime los datos calculada por una 
+regresión lineal.
+
+La opción 5, sale del menú y la ejecución del programa.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+Para más información acerca de las correlaciones de Pearson y Spearman visite los siguiente sitios:
+
+https://www.cimec.es/coeficiente-correlacion-pearson/
+
+https://www.questionpro.com/blog/es/coeficiente-de-correlacion-de-spearman/
